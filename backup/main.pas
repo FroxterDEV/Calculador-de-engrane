@@ -63,16 +63,16 @@ begin
   hueco := (21/40) * paso;
 
   //Mostar
-  txt_Resultados.Lines.Append('Altura del adendum: '+ hAdendum.ToString);
-  txt_Resultados.Lines.Append('Altura del dedendum: '+ hDedendum.ToString);
-  txt_Resultados.Lines.Append('Altura del diente: '+ hDiente.ToString);
-  txt_Resultados.Lines.Append('Longitud del diente: '+ longDiente.ToString);
-  txt_Resultados.Lines.Append('Paso: '+ paso.ToString);
-  txt_Resultados.Lines.Append('Diametro primitivo: '+ dPrimitivo.ToString);
-  txt_Resultados.Lines.Append('Diametro exterior: '+ dExterior.ToString);
-  txt_Resultados.Lines.Append('Diametro interior: '+ dInterior.ToString);
-  txt_Resultados.Lines.Append('Grueso: '+ grueso.ToString);
-  txt_Resultados.Lines.Append('Hueco: '+ hueco.ToString);
+  txt_Resultados.Lines.Append('Altura del adendum: '+ hAdendum.ToString + 'mm');
+  txt_Resultados.Lines.Append('Altura del dedendum: '+ hDedendum.ToString + 'mm');
+  txt_Resultados.Lines.Append('Altura del diente: '+ hDiente.ToString + 'mm');
+  txt_Resultados.Lines.Append('Longitud del diente: '+ longDiente.ToString + 'mm');
+  txt_Resultados.Lines.Append('Paso: '+ paso.ToString + 'mm');
+  txt_Resultados.Lines.Append('Diametro primitivo: '+ dPrimitivo.ToString + 'mm');
+  txt_Resultados.Lines.Append('Diametro exterior: '+ dExterior.ToString + 'mm');
+  txt_Resultados.Lines.Append('Diametro interior: '+ dInterior.ToString + 'mm');
+  txt_Resultados.Lines.Append('Grueso: '+ grueso.ToString + 'mm');
+  txt_Resultados.Lines.Append('Hueco: '+ hueco.ToString + 'mm');
 end;
 
 end.

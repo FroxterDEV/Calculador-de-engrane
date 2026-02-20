@@ -63,6 +63,7 @@ begin
   hueco := (21/40) * paso;
 
   //Mostar
+  txt_Resultados.Lines.Clear;
   txt_Resultados.Lines.Append('Altura del adendum: '+ hAdendum.ToString + 'mm');
   txt_Resultados.Lines.Append('Altura del dedendum: '+ hDedendum.ToString + 'mm');
   txt_Resultados.Lines.Append('Altura del diente: '+ hDiente.ToString + 'mm');
