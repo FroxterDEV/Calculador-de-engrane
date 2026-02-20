@@ -1,0 +1,93 @@
+object frm_Main: Tfrm_Main
+  Left = 696
+  Height = 224
+  Top = 386
+  Width = 463
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculador de engranes'
+  ClientHeight = 224
+  ClientWidth = 463
+  LCLVersion = '4.4.0.0'
+  object pnl_Datos: TPanel
+    Left = 0
+    Height = 224
+    Top = 0
+    Width = 170
+    Align = alLeft
+    ClientHeight = 224
+    ClientWidth = 170
+    TabOrder = 0
+    object lbl_Dientes: TLabel
+      Left = 8
+      Height = 15
+      Top = 8
+      Width = 42
+      Caption = 'Dientes:'
+    end
+    object sptxt_Dientes: TSpinEdit
+      Left = 56
+      Height = 23
+      Top = 8
+      Width = 106
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 0
+    end
+    object lbl_Modulo: TLabel
+      Left = 8
+      Height = 15
+      Top = 40
+      Width = 78
+      Caption = 'Módulo (mm):'
+    end
+    object fsptxt_Modulo: TFloatSpinEdit
+      Left = 88
+      Height = 23
+      Top = 40
+      Width = 74
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 1
+    end
+    object btn_Calcular: TButton
+      Left = 8
+      Height = 25
+      Top = 192
+      Width = 152
+      Action = act_Calcular
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 2
+    end
+  end
+  object pnl_Resultados: TPanel
+    Left = 175
+    Height = 224
+    Top = 0
+    Width = 288
+    Align = alClient
+    ClientHeight = 224
+    ClientWidth = 288
+    TabOrder = 1
+    object txt_Resultados: TMemo
+      Left = 1
+      Height = 222
+      Top = 1
+      Width = 286
+      Align = alClient
+      ReadOnly = True
+      TabOrder = 0
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 170
+    Height = 224
+    Top = 0
+    Width = 5
+  end
+  object al_Main: TActionList
+    Left = 432
+    object act_Calcular: TAction
+      Caption = 'Calcular'
+      OnExecute = act_CalcularExecute
+    end
+  end
+end
